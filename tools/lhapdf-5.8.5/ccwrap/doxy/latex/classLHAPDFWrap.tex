@@ -1,0 +1,231 @@
+\section{LHAPDFWrap Class Reference}
+\label{classLHAPDFWrap}\index{LHAPDFWrap@{LHAPDFWrap}}
+{\tt \#include $<$LHAPDFWrap.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{LHAPDFWrap} ()\label{classLHAPDFWrap_e6223b1c53487f121df8bdbb8ed0b634}
+
+\begin{CompactList}\small\item\em Do-nothing constructor. \item\end{CompactList}\item 
+\bf{LHAPDFWrap} (const std::string \&name)
+\item 
+\bf{LHAPDFWrap} (const std::string \&name, int memset)
+\item 
+\bf{LHAPDFWrap} (int nset, const std::string \&name)
+\item 
+\bf{LHAPDFWrap} (int nset, const std::string \&name, int memset)
+\item 
+std::vector$<$ double $>$ \bf{xfx} (double x, double Q)
+\item 
+double \bf{xfx} (double x, double Q, int fl)
+\item 
+std::vector$<$ double $>$ \textbf{xfxp} (double x, double Q, double P2, int ip)\label{classLHAPDFWrap_af15a4c63fa5a7b11904e903ad9f86d6}
+
+\item 
+double \textbf{xfxp} (double x, double Q, double P2, int ip, int fl)\label{classLHAPDFWrap_b51df18b52c02dce4b7872a7c53c1b9d}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfxa} (double x, double Q, double a)\label{classLHAPDFWrap_46001899147b3da749387e5f1005b6b8}
+
+\item 
+double \textbf{xfxa} (double x, double Q, double a, int fl)\label{classLHAPDFWrap_9552a0122941d79337d60b5ec71aed7a}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfxphoton} (double x, double Q)\label{classLHAPDFWrap_20a6fc284d10d910a25ec6fe4b54499a}
+
+\item 
+double \textbf{xfxphoton} (double x, double Q, int fl)\label{classLHAPDFWrap_d2ad8735b3cc229d4a65265b8149aefe}
+
+\item 
+void \bf{init\-PDFSet} (const std::string \&name)\label{classLHAPDFWrap_46bd31180342c38157c351cb951b2634}
+
+\begin{CompactList}\small\item\em The PDF set by name, see subdir 'PDFset' of LHAPDFv2 for choices. \item\end{CompactList}\item 
+void \bf{init\-PDFSet\-By\-Name} (const std::string \&name)\label{classLHAPDFWrap_4a37f5adc075d8d75194fee3e4c5cfd1}
+
+\begin{CompactList}\small\item\em The PDF set by name, see subdir 'PDFset' of LHAPDFv2 for choices. \item\end{CompactList}\item 
+void \bf{init\-PDF} (int memset)\label{classLHAPDFWrap_24ca320f1e67a1b7fc2f9b261ee81ab8}
+
+\begin{CompactList}\small\item\em The choice of PDF subset out of one distribution. \item\end{CompactList}\item 
+void \bf{get\-Description} ()\label{classLHAPDFWrap_81932fee89bbcc59c6fcd09295c1fc12}
+
+\begin{CompactList}\small\item\em Prints a brief description of the current pdf set to stdout. \item\end{CompactList}\item 
+int \bf{number\-PDF} ()\label{classLHAPDFWrap_13211d11815b5b200f7a5209c54ccaa9}
+
+\begin{CompactList}\small\item\em Number of subsets available in the current distribution. \item\end{CompactList}\item 
+double \bf{alphas\-PDF} (double Q)\label{classLHAPDFWrap_783b1ee389e4591890395b917919eb8a}
+
+\begin{CompactList}\small\item\em $ \alpha_\mathrm{s} $ used by the current PDF. \item\end{CompactList}\item 
+int \textbf{get\-Order\-PDF} ()\label{classLHAPDFWrap_91fa5fe65a9cb659a2aac104292bc5a4}
+
+\item 
+int \bf{get\-Order\-Alpha\-S} ()\label{classLHAPDFWrap_f484fe6f03e00c90d1690d494c71eb18}
+
+\begin{CompactList}\small\item\em Perturbative order of parton evolution and $ \alpha_\mathrm{s} $ respectively. \item\end{CompactList}\item 
+double \bf{get\-QMass} (int f)\label{classLHAPDFWrap_be0cd673f4ba2508537a29c52c19a1dc}
+
+\begin{CompactList}\small\item\em Quark mass used for flavour f. \item\end{CompactList}\item 
+double \bf{get\-Threshold} (int f)\label{classLHAPDFWrap_1c681484187714da11568f8b0717711a}
+
+\begin{CompactList}\small\item\em Threshold for flavour f. \item\end{CompactList}\item 
+int \bf{get\-Nf} ()\label{classLHAPDFWrap_d51acf7af8f368645df2730da348b49e}
+
+\begin{CompactList}\small\item\em Number of flavours used in the current PDF set. \item\end{CompactList}\item 
+double \bf{get\-Lam4} (int m)\label{classLHAPDFWrap_e42d26f1890fb7ecdcc196162e3c1296}
+
+\begin{CompactList}\small\item\em Value of QCD lambda4 for member m. \item\end{CompactList}\item 
+double \bf{get\-Lam5} (int m)\label{classLHAPDFWrap_94b3cf8efcd0bfb598a039573581bcf6}
+
+\begin{CompactList}\small\item\em Value of QCD lambda5 for member m. \item\end{CompactList}\item 
+double \textbf{get\-Xmin} (int m)\label{classLHAPDFWrap_23651a232b6518420dba222d9c139be5}
+
+\item 
+double \textbf{get\-Xmax} (int m)\label{classLHAPDFWrap_509bae2ad1f799de41da9b57a0b993d3}
+
+\item 
+double \textbf{get\-Q2min} (int m)\label{classLHAPDFWrap_871d699a0be216d05edf1c9988b1b514}
+
+\item 
+double \textbf{get\-Q2max} (int m)\label{classLHAPDFWrap_79bbc83cd72890957da796674bd11be3}
+
+\item 
+void \textbf{extrapolate} ()\label{classLHAPDFWrap_6512a1afa6edddde8ba1ce8f51384698}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfx\-M} (int nset, double x, double Q)\label{classLHAPDFWrap_275f2d7b0b77f6b90a9452ab42994e89}
+
+\item 
+double \textbf{xfx\-M} (int nset, double x, double Q, int fl)\label{classLHAPDFWrap_eac45dad0ae2e088a0d071486dbff1f2}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfxp\-M} (int nset, double x, double Q, double P2, int ip)\label{classLHAPDFWrap_4c67d4f309559312fc7748507e525417}
+
+\item 
+double \textbf{xfxp\-M} (int nset, double x, double Q, double P2, int ip, int fl)\label{classLHAPDFWrap_f6c7fb83eee4045c6f1c1c7bd5079ce6}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfxa\-M} (int nset, double x, double Q, double a)\label{classLHAPDFWrap_567cb6f65e16c95eee6ee927097b9f15}
+
+\item 
+double \textbf{xfxa\-M} (int nset, double x, double Q, double a, int fl)\label{classLHAPDFWrap_4fa1979798e4caac15189e964d4cbe3e}
+
+\item 
+std::vector$<$ double $>$ \textbf{xfxphoton\-M} (int nset, double x, double Q)\label{classLHAPDFWrap_a71df8ffc77975c861ee74cb4f9e8864}
+
+\item 
+double \textbf{xfxphoton\-M} (int nset, double x, double Q, int fl)\label{classLHAPDFWrap_1b6f66900103ca6529e77495b352b924}
+
+\item 
+void \bf{init\-PDFSet\-M} (int nset, const std::string \&name)\label{classLHAPDFWrap_ff1400fdf2b601f257b9a243c340d57c}
+
+\begin{CompactList}\small\item\em The PDF set by name, see subdir 'PDFset' of LHAPDFv2 for choices. \item\end{CompactList}\item 
+void \bf{init\-PDFSet\-By\-Name\-M} (int nset, const std::string \&name)\label{classLHAPDFWrap_5a8a61d4016f1540b8ef6016394d07e8}
+
+\begin{CompactList}\small\item\em The PDF set by name, see subdir 'PDFset' of LHAPDFv2 for choices. \item\end{CompactList}\item 
+void \bf{init\-PDFM} (int nset, int memset)\label{classLHAPDFWrap_88e38e7a7762ac9bc4d6eaa5620c7523}
+
+\begin{CompactList}\small\item\em The choice of PDF subset out of one distribution. \item\end{CompactList}\item 
+void \bf{get\-Description\-M} (int nset)\label{classLHAPDFWrap_f7f8a73a0441387c361535711c014db2}
+
+\begin{CompactList}\small\item\em Prints a brief description of the current PDF set to stdout. \item\end{CompactList}\item 
+int \bf{number\-PDFM} (int nset)\label{classLHAPDFWrap_819047b9acc4932064761ac318f7913e}
+
+\begin{CompactList}\small\item\em Number of subsets available in the current distribution. \item\end{CompactList}\item 
+double \bf{alphas\-PDFM} (int nset, double Q)\label{classLHAPDFWrap_ecd4b8200ecf3dcb98ce99c024941561}
+
+\begin{CompactList}\small\item\em $ \alpha_\mathrm{s} $ used by the current PDF. \item\end{CompactList}\item 
+int \textbf{get\-Order\-PDFM} (int nset)\label{classLHAPDFWrap_01bba30c1057f6d2d353e4a392e68365}
+
+\item 
+int \bf{get\-Order\-Alpha\-SM} (int nset)\label{classLHAPDFWrap_365c983050c72c5b4079be859b1838c2}
+
+\begin{CompactList}\small\item\em Perturbative order of parton evolution and $ \alpha_\mathrm{s} $ respectively. \item\end{CompactList}\item 
+double \bf{get\-QMass\-M} (int nset, int f)\label{classLHAPDFWrap_c00c308f40f61e94b500e08daf3d9c37}
+
+\begin{CompactList}\small\item\em Quark mass used for flavour f. \item\end{CompactList}\item 
+double \bf{get\-Threshold\-M} (int nset, int f)\label{classLHAPDFWrap_dce90a6d699584382a141d8bb5001293}
+
+\begin{CompactList}\small\item\em Threshold for flavour f. \item\end{CompactList}\item 
+int \bf{get\-Nf\-M} (int nset)\label{classLHAPDFWrap_044487d822e72a45e2f93a070bd56b7f}
+
+\begin{CompactList}\small\item\em Number of flavours used in the current PDF set. \item\end{CompactList}\item 
+double \bf{get\-Lam4M} (int nset, int m)\label{classLHAPDFWrap_2ae413ddb840562204756e6ebe0def85}
+
+\begin{CompactList}\small\item\em Value of QCD lambda4 for member m. \item\end{CompactList}\item 
+double \bf{get\-Lam5M} (int nset, int m)\label{classLHAPDFWrap_e13614a8b8aec05bdf824745f552ffcc}
+
+\begin{CompactList}\small\item\em Value of QCD lambda5 for member m. \item\end{CompactList}\item 
+double \textbf{get\-Xmin\-M} (int nset, int m)\label{classLHAPDFWrap_35dd39aa67d04aaad67d667f028ae67a}
+
+\item 
+double \textbf{get\-Xmax\-M} (int nset, int m)\label{classLHAPDFWrap_a5e2c14b053a9f8cfe128f5588ea0e66}
+
+\item 
+double \textbf{get\-Q2min\-M} (int nset, int m)\label{classLHAPDFWrap_45969f18e61c6cdaf807d40372274c81}
+
+\item 
+double \textbf{get\-Q2max\-M} (int nset, int m)\label{classLHAPDFWrap_7523cad0406f2ad92bb2389a7825b335}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class used to contain all the wrapper functions. \begin{Desc}
+\item[\bf{Deprecated}]The class-based C++ wrapper on \doxyref{LHAPDF}{p.}{namespaceLHAPDF} will be retired in a forthcoming release of \doxyref{LHAPDF}{p.}{namespaceLHAPDF} in favour of the namespaced wrapper declared in {\tt \doxyref{LHAPDF.h}{p.}{LHAPDF_8h-source}}. Please convert client code which uses the class interface to use the new interface instead. Typically, this will just involve changing the header include from {\tt \char`\"{}LHAPDF/LHAPDFWrap.h\char`\"{}} to {\tt \char`\"{}LHAPDF/LHAPDFWrap.h\char`\"{}}, changing any constructors to initialisation functions, and replacing {\tt \doxyref{LHAPDFWrap}{p.}{classLHAPDFWrap}} objects with an {\tt \doxyref{LHAPDF}{p.}{namespaceLHAPDF}} namespace. For example, \end{Desc}
+
+
+\begin{Code}\begin{verbatim}  #include "LHAPDF/LHAPDFWrap.h"
+  LHAPDFWrap pdf = LHAPDFWrap("MRST2004qed.LHgrid", 0);
+  pdf.getDescription();
+\end{verbatim}\end{Code}
+
+ would be replaced by 
+
+\begin{Code}\begin{verbatim}  #include "LHAPDF/LHAPDF.h"
+  LHAPDF::initPDFByName("MRST2004qed.LHgrid", 0);
+  LHAPDF::getDescription();
+\end{verbatim}\end{Code}
+
+ 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}LHAPDFWrap::LHAPDFWrap (const std::string \& {\em name})}\label{classLHAPDFWrap_48636adc1518b1d15918ba59ba61b4e3}
+
+
+Typical constructor with PDF set 'name' 'name' is the name of the grid or data file of the desired set. \index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}LHAPDFWrap::LHAPDFWrap (const std::string \& {\em name}, int {\em memset})}\label{classLHAPDFWrap_c8af874119dbfb25160d17f8c03a799b}
+
+
+Typical constructor with PDF set 'name' and subset 'memset' 'name' is the name of the grid or data file of the desired set. \index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}LHAPDFWrap::LHAPDFWrap (int {\em nset}, const std::string \& {\em name})}\label{classLHAPDFWrap_c383157ab7d09c9da66753f99e9eed15}
+
+
+Typical constructor (when multiple PDF sets need to be initialized) with pdfset 'name' and subset 'memset'. 'name' is the name of the grid or data file of the desired set. int nset specifies the reference number for the set to be initialized \index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\index{LHAPDFWrap@{LHAPDFWrap}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}LHAPDFWrap::LHAPDFWrap (int {\em nset}, const std::string \& {\em name}, int {\em memset})}\label{classLHAPDFWrap_b7915bf050b0c7abea39e9eb984e374c}
+
+
+Typical constructor (when multiple PDF sets need to be initialized) with PDF set 'name' and subset 'memset'. 'name' is the name of the grid or data file of the desired set. int nset specifies the reference number for the set to be initialized 
+
+\subsection{Member Function Documentation}
+\index{LHAPDFWrap@{LHAPDFWrap}!xfx@{xfx}}
+\index{xfx@{xfx}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double LHAPDFWrap::xfx (double {\em x}, double {\em Q}, int {\em fl})}\label{classLHAPDFWrap_61fc80c3a64b61ee79449e183de91569}
+
+
+Returns xf(x, Q) for flavour fl - this time the flavour encoding is as in the \doxyref{LHAPDF}{p.}{namespaceLHAPDF} manual... -6..-1 = tbar,...,ubar, dbar 1..6 = duscbt 0 = g \index{LHAPDFWrap@{LHAPDFWrap}!xfx@{xfx}}
+\index{xfx@{xfx}!LHAPDFWrap@{LHAPDFWrap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$double$>$ LHAPDFWrap::xfx (double {\em x}, double {\em Q})}\label{classLHAPDFWrap_9641b08cd0b309b8207995b30a2b1eac}
+
+
+Returns a vector xf(x, Q) with index 0 $<$ i $<$ 12. 0..5 = tbar, ..., ubar, dbar; 6 = g; 7..12 = d, u, ..., t 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/data1/speer/topmass/cmssw/lhapdf-5.8.5/include/LHAPDF/LHAPDFWrap.h\end{CompactItemize}
